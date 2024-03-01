@@ -1,0 +1,30 @@
+// The designs were created to the following widths:
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// 375px, 1150px, 1440px
+$breakpoints-up: (
+    'medium': '23.438em',
+    'large': '71.875em', // may need adjusting
+    'xlarge': '90em',
+);
+
+// 374px, 1149px, 1439px
+$breakpoints-down: (
+    'small': '23.375em',
+    'medium': '71.8125em', // may need adjusting
+    'large': '89.938em',
+);
+
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+
