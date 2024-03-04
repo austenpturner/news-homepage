@@ -2,17 +2,17 @@
 // - Mobile: 375px
 // - Desktop: 1440px
 
-// 375px, 1150px, 1440px
+// 375px, 768px, 1440px
 $breakpoints-up: (
     'medium': '23.438em',
-    'large': '71.875em', // may need adjusting
+    'large': '47.9375em', // may need adjusting
     'xlarge': '90em',
 );
 
-// 374px, 1149px, 1439px
+// 374px, 767px, 1439px
 $breakpoints-down: (
     'small': '23.375em',
-    'medium': '71.8125em', // may need adjusting
+    'medium': '63.9375em', // may need adjusting
     'large': '89.938em',
 );
 

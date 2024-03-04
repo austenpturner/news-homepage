@@ -1,0 +1,58 @@
+@use '../util/' as *;
+
+.nav {
+    padding: 0;
+    margin: 0;
+    &__toggle {
+        height: rem(40);
+        width: rem(40);
+        margin: auto;
+        position: relative;
+        z-index: 2;
+        &:checked ~ .nav__container {
+            transform: translate(-100%);
+        }
+        @include breakpoint(large) {
+            display: none;
+        }
+    }
+    &__container {
+        background: var(--off-white);
+        height: 100vh;
+        width: 65vw;
+        position: absolute;
+        left: 100vw;
+        top: 0;
+        transition: transform 0.5s ease-in-out;
+        z-index: 1;
+        @include breakpoint(large) {
+            height: 100%;
+            width: rem(500);
+            position: static;
+            transform: none;
+            transition: none;
+        }
+    }
+    &__navlist {
+        margin-top: rem(130);
+        padding-left: rem(30);
+        @include breakpoint(large) {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    &__navlink {
+        padding-bottom: rem(30);
+        @include breakpoint(large) {
+            padding-right: rem(20);
+        }
+        a {
+            color: var(--very-dark-blue);
+            cursor: pointer;
+            &:hover {
+                color: var(--soft-red);
+            }
+        }
+    }
+}

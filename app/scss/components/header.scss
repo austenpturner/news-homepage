@@ -1,1 +1,11 @@
 @use '../util/' as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    img {
+        height: rem(40);
+        margin: 0;
+        padding: 0;
+    }  
+}
