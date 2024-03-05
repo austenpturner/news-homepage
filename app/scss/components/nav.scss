@@ -7,12 +7,21 @@
         cursor: pointer;
         height: rem(32);
         width: rem(32);
-        margin: rem (5) auto;
+        margin: rem(5) auto;
         position: absolute;
         opacity: 0;
         z-index: 3;
         &:checked ~ .nav__container {
             transform: translate(-100%);
+        }
+        &:checked ~ .nav__toggle .nav__line:first-child {
+            transform: rotate(45deg) translate(-3px, -3px);
+        }
+        &:checked ~ .nav__toggle .nav__line:nth-child(2) {
+            opacity: 0;
+        }
+        &:checked ~ .nav__toggle .nav__line:nth-child(3) {
+            transform: rotate(-45deg) translate(0, -1px);
         }
         @include breakpoint(large) {
             display: none;
@@ -31,11 +40,16 @@
         border-radius: 5px;
         height: rem(3);
         margin: rem(3) auto;
+        opacity: 1;
         position: relative;
         width: rem(32);
+        transition: all 0.5s cubic-bezier(0.8,-0.01, 0.12, 0.99);
         z-index: 2;
-        :first-child {
-            margin-top: rem(20);
+        &:first-child {
+            transform-origin: 0% 0%;
+        }
+        &:nth-child(3) {
+            transform-origin: 0% 100%;
         }
     }
     &__container {
