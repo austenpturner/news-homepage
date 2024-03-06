@@ -2,6 +2,9 @@
 
 .hero {
     width: 100%;
+    @include breakpoint(large) {
+        width: 66.66%;
+    }
     &__img {
         object-fit: contain;
         margin-bottom: rem(18);
@@ -29,7 +32,6 @@
         }
         p {
             color: var(--dark-grayish-blue);
-            line-height: 1.7;
             margin: 0 auto rem(20);
         }
     }

@@ -5,7 +5,19 @@
     max-width: rem(1110);
     padding: 0 rem(20);
     height: rem(40);
+    @include breakpoint(large) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     @include breakpoint(xlarge) {
         padding: 0;
+    }
+}
+
+section {
+    margin-bottom: rem(60);
+    @include breakpoint(large) {
+        margin-bottom: 0;
     }
 }

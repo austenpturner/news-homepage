@@ -1,0 +1,31 @@
+@use '../util/' as *;
+
+.new {
+    background: var(--very-dark-blue);
+    padding: rem(26) rem(20) 0 rem(20);
+    @include breakpoint(large) {
+        width: 33.33%;
+    }
+    &__header {
+        color: var(--soft-orange);
+        font-size: rem(28);
+    }
+    &__container {
+        border-bottom: 1px solid var(--dark-grayish-blue);
+        margin-bottom: rem(30);
+        &:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+    }
+    &__headline {
+        color: var(--off-white);
+        font-size: rem(18);
+        margin-bottom: rem(8);
+    }
+    &__subheading {
+        color: var(--greyish-blue);
+        padding-bottom: rem(26);
+        margin: 0 auto;
+    }
+}
