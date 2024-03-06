@@ -31,6 +31,12 @@
     &__ranking {
         color: var(--greyish-blue);
     }
+    &__heading {
+        cursor: pointer;
+        &:hover {
+        color: var(--soft-red);
+    }
+    }
     &__subheading {
         color: var(--dark-grayish-blue);
         margin: 0;

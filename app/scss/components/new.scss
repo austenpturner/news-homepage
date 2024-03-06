@@ -21,8 +21,12 @@
     }
     &__headline {
         color: var(--off-white);
+        cursor: pointer;
         font-size: rem(18);
         margin-bottom: rem(8);
+        &:hover {
+            color: var(--soft-orange);
+        }
     }
     &__subheading {
         color: var(--greyish-blue);
