@@ -4,7 +4,8 @@
     background: var(--very-dark-blue);
     padding: rem(26) rem(20) 0 rem(20);
     @include breakpoint(large) {
-        width: 33.33%;
+        margin-left: rem(24);
+        width: 30%;
     }
     &__header {
         color: var(--soft-orange);

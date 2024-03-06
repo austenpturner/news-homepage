@@ -3,7 +3,7 @@
 .hero {
     width: 100%;
     @include breakpoint(large) {
-        width: 66.66%;
+        width: calc(100% - 30% - (rem(24)));
     }
     &__img--mobile,
     &__img--desktop {
@@ -31,17 +31,18 @@
     }
     h1 {
         @include breakpoint(large) {
-            max-width: 350px;
+            margin-bottom: 0;
+            width: 50%;
         }
     }
     &__content {
         @include breakpoint(large) {
             margin-left: rem(40);
-            // width: 80%;
+            width: 50%;
         }
         p {
             color: var(--dark-grayish-blue);
-            margin: 0 auto rem(20);
+            margin: 0 auto rem(24);
         }
     }
     &__btn {

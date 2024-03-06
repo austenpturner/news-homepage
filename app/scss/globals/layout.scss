@@ -18,6 +18,6 @@
 section {
     margin-bottom: rem(60);
     @include breakpoint(large) {
-        margin-bottom: 0;
+        margin-bottom: rem(45);
     }
 }

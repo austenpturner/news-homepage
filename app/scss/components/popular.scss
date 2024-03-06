@@ -11,6 +11,9 @@
         flex-direction: row;
         margin-bottom: rem(34);
         width: 100%;
+        @include breakpoint(large) {
+            margin-left: rem(12);
+        }
     }
     &__image {
         width: 30%;
