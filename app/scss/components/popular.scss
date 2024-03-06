@@ -9,6 +9,7 @@
     &__article {
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
         margin-bottom: rem(34);
         width: 100%;
         @include breakpoint(large) {
@@ -16,7 +17,7 @@
         }
     }
     &__image {
-        width: 30%;
+        width: rem(100);
         object-fit: contain;
     }
     &__content {
