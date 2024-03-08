@@ -5,14 +5,18 @@
     position: fixed;
     top: 0;
     transition: all 0.5s ease-in-out;
+    visibility: hidden;
     width: 100%;
     z-index: 10;
 }
 
 .overlay[data-visible="true"] {
     opacity: 0.8;
+    visibility: visible;
 }
 
+
+// applied to body when overlay visible to prevent scroll
 .hidden {
     overflow-y: hidden;
 }
