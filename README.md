@@ -6,8 +6,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 - [The challenge](#the-challenge)
 - [Screenshot](#screenshot)
-- [Links](#links)
-- [My process](#my-process)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
 - [Continued development](#continued-development)
@@ -30,15 +28,12 @@ There is also a `style-guide.md` file containing the information you'll need, su
 ### Screenshot
 
 Mobile layout, nav with overlay, and hover states:
-![](./assets/videos/News%20homepage.gif)
+
+- ![](./assets/videos/Newshomepage.gif)
 
 Desktop layout and hover states:
-![](./assets/videos/Newshomepagemobile.gif)
 
-### Links
-
-- Solution URL: [News homepage](https://github.com/austenpturner/news-homepage)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- ![](./assets/videos/Newshomepagemobile.gif)
 
 ### Built with
 
