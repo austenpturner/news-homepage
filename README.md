@@ -29,17 +29,15 @@ There is also a `style-guide.md` file containing the information you'll need, su
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Mobile layout, nav with overlay, and hover states:
+![](./assets/videos/News%20homepage.gif)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+Desktop layout and hover states:
+![](./assets/videos/Newshomepagemobile.gif)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/austenpturner/news-homepage)
+- Solution URL: [News homepage](https://github.com/austenpturner/news-homepage)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ### Built with
@@ -53,34 +51,35 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Naming the elements using BEM also took longer than I expected - coming up with names continues to prove more difficult than I think it will be. Similarly, deciding which elements to nest in others and which to create a component scss file for took some time. I learned that sometimes it's best to make a decision and move forward, as I can always go back and change things later, then to deliberate too long over (what will be seen later as small) details.
 
-To see how you can add code snippets, see below:
+Deciding how to add the overlay to the page while the nav bar is visible on mobile was the most tedious. At first I did not like the idea of adding an element as the overlay, so I was trying to figure how to implement with the semantic elements I'd already created (i.e., body, main). However that prove difficult as the nav was nested inside. Ultimately I did end up creating a div that was a sibling of the header and main tags inside the body to create the overlay affect.
+
+I created an overlay component and used a "data-visible" attribute:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+<div class="overlay" data-visible="false"></div>
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Areas that I'd like to continue focusing on in this project:
+
+- functionality so that if a user widens the screen while the mobile nav bar and overlay are visible they will both transition to hide and the desktop nav will appear instead
+- sticky header/nav bar
+- adding utility classes for flexbox
+
+Techniques I'd like to refine for future projects:
+
+- Transitioning elements on and off screen using positioning
+- Using BEM
+- Organizing SCSS files and folders
+- Creating reusable components
 
 ### Useful resources
 
-- [Example resource 1](https://codepen.io/shieldsma91/pen/zLpbLX) - This codepen helped me with the functionality of the mobile nav hamburger - specifically the hamburger animation and using a checkbox to trigger the nav to open and close.
-- [Kevin Powell's YouTube](https://www.youtube.com/watch?v=HbBMp6yUXO0&t=2482s) - This navbar tutorial video helped me with the logic of adding the overlay functionality when the mobile nav bar was open.
+- [Mobile Nav by Mel Shields on Codepen](https://codepen.io/shieldsma91/pen/zLpbLX) - This codepen helped me with the functionality of the mobile nav hamburger - specifically the hamburger animation and using a checkbox to trigger the nav to open and close.
+- [Responsive navbar tutorial using HTML CSS & JS video by Kevin Powell on YouTube](https://www.youtube.com/watch?v=HbBMp6yUXO0&t=2482s) - This navbar tutorial video helped me with the logic of adding the overlay functionality when the mobile nav bar was open.
 - [ChatGPT](https://chat.openai.com/c/4bff9774-b740-46d1-b9d0-f17637513221) - To get inspiration on how to add the overlay element to my HTML and write the css.
 
 ## Author
