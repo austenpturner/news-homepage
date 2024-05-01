@@ -1,11 +1,11 @@
-@use '../util/' as *;
+@use "../util/" as *;
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    img {
-        height: rem(40);
-        margin: 0;
-        padding: 0;
-    }  
+  display: flex;
+  justify-content: space-between;
+  img {
+    height: rem(40);
+    margin: 0;
+    padding: 0;
+  }
 }

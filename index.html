@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>News homepage</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>News homepage</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="/dist/style.css">
-  <script defer src="/dist/script.js"></script>
-</head>
-<body>
-  
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script defer src="/dist/script.js"></script>
+  </head>
+  <body>
     <header class="header container">
       <img src="./assets/images/logo.svg" alt="logo" />
       <nav class="nav">
-        <input type="checkbox" name="menu" class="nav__checkbox" 
-        aria-expanded="false" />
+        <input
+          type="checkbox"
+          name="menu"
+          class="nav__checkbox"
+          aria-expanded="false"
+        />
         <!-- <label for="menu" class="sr-only">Menu</label> -->
         <div class="nav__toggle">
           <span class="nav__line"></span>
@@ -52,17 +63,29 @@
     <main>
       <div class="main container">
         <section class="hero">
-          <img src="/assets/images/image-web-3-mobile.jpg" alt="hero image" class="hero__img--mobile"/>
-          <img src="/assets/images/image-web-3-desktop.jpg" alt="hero image" class="hero__img--desktop"/>
+          <img
+            src="/assets/images/image-web-3-mobile.jpg"
+            alt="hero image"
+            class="hero__img--mobile"
+          />
+          <img
+            src="/assets/images/image-web-3-desktop.jpg"
+            alt="hero image"
+            class="hero__img--desktop"
+          />
           <div class="hero__headline">
             <h1>The Bright Future of Web 3.0?</h1>
             <div class="hero__content">
-              <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
               <button class="hero__btn">Read more</button>
             </div>
           </div>
         </section>
-  
+
         <section class="new">
           <h2 class="new__header">New</h2>
           <div class="new__container">
@@ -74,20 +97,26 @@
           <div class="new__container">
             <h3 class="new__headline">The Downsides of AI Artistry</h3>
             <p class="new__subheading">
-              What are the possible adverse effects of on-demand AI image generation?
+              What are the possible adverse effects of on-demand AI image
+              generation?
             </p>
           </div>
           <div class="new__container">
             <h3 class="new__headline">Is VC Funding Drying Up?</h3>
             <p class="new__subheading">
-              Private funding by VC firms is down 50% YOY. We take a look at what that means.
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
             </p>
           </div>
         </section>
-  
+
         <section class="popular">
           <div class="popular__article">
-            <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PC" class="popular__image">
+            <img
+              src="./assets/images/image-retro-pcs.jpg"
+              alt="Retro PC"
+              class="popular__image"
+            />
             <div class="popular__content">
               <h2 class="popular__ranking">01</h2>
               <h3 class="popular__heading">Reviving Retro PCs</h3>
@@ -97,7 +126,11 @@
             </div>
           </div>
           <div class="popular__article">
-            <img src="./assets/images/image-top-laptops.jpg" alt="Laptop" class="popular__image">
+            <img
+              src="./assets/images/image-top-laptops.jpg"
+              alt="Laptop"
+              class="popular__image"
+            />
             <div class="popular__content">
               <h2 class="popular__ranking">02</h2>
               <h3 class="popular__heading">Top 10 Laptops of 2022</h3>
@@ -107,7 +140,11 @@
             </div>
           </div>
           <div class="popular__article">
-            <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming" class="popular__image">
+            <img
+              src="./assets/images/image-gaming-growth.jpg"
+              alt="Gaming"
+              class="popular__image"
+            />
             <div class="popular__content">
               <h2 class="popular__ranking">03</h2>
               <h3 class="popular__heading">The Growth of Gaming</h3>
@@ -120,9 +157,9 @@
       </div>
     </main>
     <div class="overlay" data-visible="false"></div>
-  <!-- <div class="attribution">
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-</body>
+  </body>
 </html>
