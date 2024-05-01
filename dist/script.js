@@ -1,2 +1,0 @@
-"use strict";var navToggle=document.querySelector(".nav__checkbox"),overlay=document.querySelector(".overlay"),body=document.querySelector("body");navToggle.addEventListener("click",(function(){var e=overlay.getAttribute("data-visible");"false"===e?(overlay.setAttribute("data-visible",!0),body.classList.add("hidden")):"true"===e&&(overlay.setAttribute("data-visible",!1),body.classList.remove("hidden"))}));
-//# sourceMappingURL=script.js.map
