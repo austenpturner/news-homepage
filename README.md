@@ -2,6 +2,8 @@
 
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+[Deployed site](https://news-homepage-demo.pages.dev/)
+
 ## Table of contents
 
 - [The challenge](#the-challenge)
@@ -41,7 +43,7 @@ Desktop layout and hover states:
 - SCSS
 - Flexbox
 - Mobile-first workflow
-- JS
+- JavaScript
 - Gulp
 
 ### What I learned
