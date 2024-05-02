@@ -4,6 +4,8 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 [Deployed site](https://news-homepage-demo.pages.dev/)
 
+[Solution posted on Frontend Mentor](https://www.frontendmentor.io/solutions/news-homepage-built-with-html-scss-and-js-using-flexbox-MGHuni2yJK)
+
 ## Table of contents
 
 - [The challenge](#the-challenge)
